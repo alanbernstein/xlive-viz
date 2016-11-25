@@ -71,9 +71,9 @@ var basicShapes = {
         return shape
     },
 
-    hexagon: function(radius, numPoints) {
-        radius = radius || 20
+    polyhedron: function(numPoints, radius) {
         numPoints = numPoints || 6
+        radius = radius || 20
 
         var angle = 2 * Math.PI / numPoints
         var verts = []
