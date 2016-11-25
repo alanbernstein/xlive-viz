@@ -1,21 +1,25 @@
 <html>
   <head>
-    <style type="text/css">
-      body {
-      overflow: hidden;
-      }
-    </style>
-    <script src="js/three.min.js"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="display.js"></script>
+    <link href="style.css" media="all" rel="stylesheet" />
   </head>
   <body>
 
-    <script type="text/javascript">
-      init_xlive_viz();
-      animate_xlive_viz();
-    </script>
+      <div class="controls">
+          <button onclick="createObj()">Add Shape</button>
+          <button onclick="clearShapes()">Clear Shapes</button>
+          <h6>Shapes</h6>
+          <div id="shape-container"></div>
+      </div>
 
   </body>
+  <script src="js/three.min.js"></script>
+  <script src="js/polyhedra.js"></script>
+  <script src="js/three.CanvasRenderer.js"></script>
+  <script src="js/three.TrackballControls.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="elems.js"></script>
+  <script src="viz.js"></script>
+  <script src="shapes.js"></script>
+  <script src="drawPolyhedron.js"></script>
+  <script src="display.js"></script>
 </html>
-

@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    margin: 0.3em 0;
+}
+
+button {
+    width: 100%;
+    margin: 0 0 4px;
+    padding: 0.4em 0.6em;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #45aeb1;
+    color: #45aeb1;
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    line-height: 1.3em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45aeb1;
+    color: #fff;
+}
+
+.controls {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    overflow: auto;
+}
+
+.shape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.shape button {
+    flex: 0;
+    width: auto;
+}
+
+button.active {
+    background: #666666;
+    color: #fff;
+}
+
+button.active:hover {
+    background: #444444;
+}
